@@ -2,4 +2,6 @@
 .idea
 vendor
 *.jpg
+urls.txt
 *.log
+*.html
