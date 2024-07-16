@@ -1,0 +1,17 @@
+version: '3.9'
+name: telegraph
+services:
+  conv:
+    container_name: 'telegraph'
+    image: zhangyiming748/telegraph:latest
+    volumes:
+      - 'path/to/save/urls.txt:/data'
+    deploy:
+      resources:
+        limits:
+          memory: 8192M
+          cpus: '4'
+    environment:
+      - root=/data
+      - proxy=http://192.168.1.5:8889
+
