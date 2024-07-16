@@ -1,6 +1,5 @@
 FROM golang:1.22.5-bookworm
 LABEL authors="zen"
-COPY debian.sources /etc/apt/sources.list.d/
 RUN go env -w GO111MODULE=on
 RUN go env -w GOPROXY=https://goproxy.cn,direct
 RUN go env -w GOBIN=/root/go/bin
