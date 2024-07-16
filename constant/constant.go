@@ -4,7 +4,7 @@ import "runtime"
 
 var (
 	Root    = "/data" // 工作目录 如果为空  默认/data
-	Proxy   = "http://192.168.1.5:8889"
+	Proxy   = "http://192.168.1.20:8889"
 	CpuNums = runtime.NumCPU() // 核心数
 )
 

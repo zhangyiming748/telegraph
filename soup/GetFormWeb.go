@@ -15,6 +15,8 @@ func GetFromWeb(uri string) {
 	defer func() {
 		if err := recover(); err != nil {
 			fmt.Println("未捕获的错误", err)
+		} else {
+			fmt.Println("完成")
 		}
 	}()
 	resp, err := GetWithProxy(uri, constant.GetProxy())
